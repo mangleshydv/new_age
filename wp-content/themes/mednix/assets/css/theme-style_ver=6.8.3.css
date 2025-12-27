@@ -246,15 +246,15 @@ a.text-btn-icon:hover svg { fill: var(--themeht-text-color); }
  Marquee Text
 ------------------------*/
 .marquee-wrap { width: 100%; position: relative; overflow: hidden; white-space: nowrap; }
-.marquee-text { position: relative; }
-.marquee-text span { color: var(--themeht-text-color); vertical-align: middle; }
-.marquee-text i { color: var(--themeht-text-color); display: inline-block; margin: 0 50px; vertical-align: middle; animation: rotate 20s linear infinite; }
-.marquee-wrap.style1 .marquee-text:nth-child(2n+2) span { background: linear-gradient(90deg, var(--themeht-primary-color), var(--themeht-text-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.marquee-text { position: relative;font-size: 14px; }
+.marquee-text span { color: var(--themeht-text-color); vertical-align: middle; font-size: 14px;}
+.marquee-text i { color: var(--themeht-text-color); display: inline-block; margin: 0 50px; vertical-align: middle; animation: rotate 20s linear infinite; font-size: 14px;}
+.marquee-wrap.style1 .marquee-text:nth-child(2n+2) span { background: linear-gradient(90deg, var(--themeht-primary-color), var(--themeht-text-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 14px;}
 .marquee-wrap.style2 .marquee-text i { margin: 0 30px; }
-.marquee-inner { display: inline-flex; gap: 2rem; animation: marquee var(--scroll-speed, 10s) linear infinite; }
-.marquee-reverse { animation-direction: reverse; }
-.marquee-text { display: inline-flex; align-items: center; gap: 0.5rem; white-space: nowrap; }
-.pause-on-hover:hover .marquee-inner { animation-play-state: paused; }
+.marquee-inner { display: inline-flex; gap: 2rem; animation: marquee var(--scroll-speed, 10s) linear infinite; font-size: 14px;}
+.marquee-reverse { animation-direction: reverse; font-size: 14px;}
+.marquee-text { display: inline-flex; align-items: center; gap: 0.5rem; white-space: nowrap; font-size: 14px; }
+.pause-on-hover:hover .marquee-inner { animation-play-state: paused; font-size: 14px; }
 
 .marquee-client img { margin: 0 30px; }
 .marquee-client .marquee-inner { animation: marquee 10s linear infinite; }
